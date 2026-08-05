@@ -87,21 +87,19 @@ public class Main {
         }
 
         
-        System.out.println("==================================================");
-        System.out.println("               ATTENDANCE REPORT                  ");
-        System.out.println("==================================================");
+        
         System.out.println("Learner Name             : " + learnerName);
         System.out.println("Total Working Days       : " + totalDaysEvaluated);
         System.out.println("Valid Days Processed     : " + validDays);
         System.out.println("Present Days             : " + countPresent);
         System.out.println("Absent Days              : " + countAbsent);
         System.out.println("Invalid Entries Ignored  : " + countInvalid);
-        System.out.println("--------------------------------------------------");
+
         System.out.printf("Attendance Percentage    : %.2f%%\n", calculatedPercentage);
         System.out.printf("Required Attendance      : %.1f%%\n", requiredPercentage);
-        System.out.println("--------------------------------------------------");
+    
         System.out.println("Eligibility Status       : " + eligibilityStatus);
         System.out.println("Consistency Status       : " + consistencyMessage);
-        System.out.println("==================================================");
+        
     }
 }
