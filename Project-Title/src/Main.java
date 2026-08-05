@@ -1,8 +1,6 @@
 public class Main {
     public static void main(String[] args) {
-        // --- 1. HARD-CODED STUDENT DETAILS & ATTENDANCE DATA ---
-        // Attendance records for 10 working days: 1 = Present, 0 = Absent, any other
-        // number = Invalid
+        
         String learnerName = "akshata";
 
         int day1 = 1;
@@ -10,13 +8,13 @@ public class Main {
         int day3 = 0;
         int day4 = 1;
         int day5 = 1;
-        int day6 = 2; // Invalid entry example (e.g., mistyped value)
+        int day6 = 2; 
         int day7 = 1;
         int day8 = 1;
         int day9 = 0;
         int day10 = 1;
 
-        // --- 2. REQUIRED VARIABLES FOR TRACKING ---
+        
         int totalDaysEvaluated = 10;
         int countPresent = 0;
         int countAbsent = 0;
@@ -24,14 +22,14 @@ public class Main {
 
         int currentDay = 1;
 
-        // Target percentage rule
+    
         double requiredPercentage = 75.0;
 
-        // --- 3. PROCESSING ATTENDANCE USING A WHILE LOOP ---
+        
         while (currentDay <= totalDaysEvaluated) {
             int attendanceStatus;
 
-            // Select day's status based on current loop iteration
+            
             if (currentDay == 1)
                 attendanceStatus = day1;
             else if (currentDay == 2)
@@ -53,27 +51,27 @@ public class Main {
             else
                 attendanceStatus = day10;
 
-            // Validate attendance record
+    
             if (attendanceStatus == 1) {
-                countPresent++; // Unary increment operator
+                countPresent++; 
             } else if (attendanceStatus == 0) {
-                countAbsent++; // Unary increment operator
+                countAbsent++; 
             } else {
-                countInvalid++; // Unary increment operator
+                countInvalid++; 
             }
 
-            currentDay++; // Unary increment to move to the next day
+            currentDay++; 
         }
 
-        // --- 4. CALCULATIONS & DECIMAL DIVISION ---
+        
         int validDays = countPresent + countAbsent;
 
-        // Explicit type casting to double for precise decimal division
+        
         double calculatedPercentage = (validDays > 0)
                 ? ((double) countPresent / validDays) * 100
                 : 0.0;
 
-        // --- 5. EVALUATION USING TERNARY OPERATOR & CONDITIONAL LOGIC ---
+        
         boolean isEligible = calculatedPercentage >= requiredPercentage;
         String eligibilityStatus = isEligible ? "ELIGIBLE" : "NOT ELIGIBLE";
 
@@ -88,7 +86,7 @@ public class Main {
             consistencyMessage = "Critical Attendance Warning";
         }
 
-        // --- 6. OUTPUT REPORT GENERATION ---
+        
         System.out.println("==================================================");
         System.out.println("               ATTENDANCE REPORT                  ");
         System.out.println("==================================================");
