@@ -2,14 +2,14 @@ public class Main {
     public static void main(String[] args) {
 
         int day1 = 1;
-        int day2 = 1;
-        int day3 = 0;
-        int day4 = 1;
-        int day5 = 1;
-        int day6 = 2;
-        int day7 = 1;
-        int day8 = 0;
-        int day9 = 1;
+        int day2 = 0;
+        int day3 = 1;
+        int day4 = 0;
+        int day5 = 0;
+        int day6 = 1;
+        int day7 = 0;
+        int day8 = 1;
+        int day9 = 0;
         int day10 = 1;
 
         int presentDays = 0;
